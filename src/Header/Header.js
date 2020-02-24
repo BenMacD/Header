@@ -6,10 +6,11 @@ import Campfire from './Campfire';
 
 const Header = props => {
     return (
-      <header>
+      <div>
         <div id="dust-main">
         <div className="bg-animation">
         <div className="moon"/>
+        <div className="silhouette"/>
           <div id='stars'></div>
 					<div id='stars2'></div>
 					<div id='stars3'></div>
@@ -17,7 +18,15 @@ const Header = props => {
           <Campfire/>
         </div>
         </div>
-      </header>
+
+        <div className="container">
+        <h1>
+          <span className="line">Ben Mac Donagh</span>
+          <br/><br/>
+          <span className="line">Full Stack Engineer</span>
+        </h1>
+      </div>
+      </div>
     );
   };
 
